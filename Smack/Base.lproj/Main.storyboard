@@ -151,6 +151,9 @@
                                 <state key="normal" title="Login">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="loginBtnPressed:" destination="Izt-sU-FTi" eventType="touchUpInside" id="9Aj-8X-wQb"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -172,10 +175,29 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="IbM-pF-YIe"/>
                     </view>
+                    <connections>
+                        <outlet property="loginBtn" destination="Uzv-HL-oGu" id="S98-I2-zmP"/>
+                        <segue destination="x90-UP-9Iz" kind="show" id="7Yo-bd-ZGZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uSc-zm-hrY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="808.79999999999995" y="-630.13493253373315"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="waV-sQ-GYM">
+            <objects>
+                <viewController id="x90-UP-9Iz" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vuI-RV-zPQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="orz-6c-QP7"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aqK-aa-o0E" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1510" y="-630"/>
         </scene>
     </scenes>
     <resources>
