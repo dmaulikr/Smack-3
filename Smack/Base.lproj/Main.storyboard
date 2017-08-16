@@ -185,10 +185,10 @@
             </objects>
             <point key="canvasLocation" x="808.79999999999995" y="-630.13493253373315"/>
         </scene>
-        <!--View Controller-->
+        <!--LoginVC-->
         <scene sceneID="waV-sQ-GYM">
             <objects>
-                <viewController id="x90-UP-9Iz" sceneMemberID="viewController">
+                <viewController id="x90-UP-9Iz" customClass="LoginVC" customModule="Smack" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="vuI-RV-zPQ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -214,6 +214,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Qp-qM-XPV">
                                 <rect key="frame" x="347" y="8" width="28" height="28"/>
                                 <state key="normal" image="closeButton"/>
+                                <connections>
+                                    <action selector="closePressed:" destination="x90-UP-9Iz" eventType="touchUpInside" id="9Nm-MH-vtD"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="pq1-aY-M7o">
                                 <rect key="frame" x="62" y="140" width="250" height="86"/>
@@ -273,7 +276,7 @@
                                     <constraint firstAttribute="width" constant="250" id="PN9-dT-2kc"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="Login">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
@@ -291,11 +294,30 @@
                             <constraint firstItem="pq1-aY-M7o" firstAttribute="top" secondItem="4vi-R6-oXD" secondAttribute="bottom" constant="40" id="bvJ-8F-dj0"/>
                             <constraint firstItem="4vi-R6-oXD" firstAttribute="centerX" secondItem="vuI-RV-zPQ" secondAttribute="centerX" id="jN2-2q-pTa"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="2Jx-ew-pwi"/>
                     </view>
+                    <connections>
+                        <segue destination="kh9-uk-Dad" kind="show" identifier="toCreateAccount" id="bgq-9l-xA6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aqK-aa-o0E" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1509.5999999999999" y="-630.13493253373315"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="P0b-vr-mdU">
+            <objects>
+                <viewController id="kh9-uk-Dad" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RJc-Dp-DhP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="gb6-FP-08c"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cFv-JA-Wan" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2293" y="-626"/>
         </scene>
     </scenes>
     <resources>
