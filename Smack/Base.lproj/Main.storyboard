@@ -177,7 +177,7 @@
                     </view>
                     <connections>
                         <outlet property="loginBtn" destination="Uzv-HL-oGu" id="S98-I2-zmP"/>
-                        <segue destination="x90-UP-9Iz" kind="show" id="7Yo-bd-ZGZ"/>
+                        <segue destination="x90-UP-9Iz" kind="show" identifier="toLogin" id="7Yo-bd-ZGZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uSc-zm-hrY" userLabel="First Responder" sceneMemberID="firstResponder"/>
