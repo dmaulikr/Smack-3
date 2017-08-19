@@ -315,9 +315,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KK3-0f-TiP">
-                                <rect key="frame" x="331" y="46" width="28" height="28"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KK3-0f-TiP">
+                                <rect key="frame" x="347" y="28" width="28" height="28"/>
                                 <state key="normal" image="closeButton"/>
                                 <connections>
                                     <action selector="closePressed:" destination="x90-UP-9Iz" eventType="touchUpInside" id="Pbf-Mm-bhK"/>
@@ -377,8 +376,8 @@
                                     <action selector="createAccntBtnPressed:" destination="x90-UP-9Iz" eventType="touchUpInside" id="iMn-sr-HHb"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hM7-gg-X6c">
-                                <rect key="frame" x="54" y="582" width="250" height="50"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hM7-gg-X6c">
+                                <rect key="frame" x="62.5" y="597" width="250" height="50"/>
                                 <color key="backgroundColor" red="0.35686274509999999" green="0.62352941179999999" blue="0.7843137255" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="250" id="Cen-h3-1P5"/>
@@ -389,8 +388,8 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" text="Smack" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qDq-5Q-mXn">
-                                <rect key="frame" x="140" y="87" width="62.5" height="23"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" text="Creat an Account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qDq-5Q-mXn">
+                                <rect key="frame" x="89" y="102" width="165" height="23"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="19"/>
                                 <color key="textColor" red="0.35686274509999999" green="0.62352941179999999" blue="0.7843137255" alpha="1" colorSpace="calibratedRGB"/>
@@ -398,12 +397,18 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="JkE-Hf-mPc" firstAttribute="trailing" secondItem="KK3-0f-TiP" secondAttribute="trailing" id="JZa-5X-9FS"/>
+                            <constraint firstItem="JkE-Hf-mPc" firstAttribute="bottom" secondItem="hM7-gg-X6c" secondAttribute="bottom" constant="20" id="OOR-0r-lg0"/>
+                            <constraint firstItem="hM7-gg-X6c" firstAttribute="centerX" secondItem="RJc-Dp-DhP" secondAttribute="centerX" id="Z7Z-6w-3pa"/>
+                            <constraint firstItem="KK3-0f-TiP" firstAttribute="top" secondItem="JkE-Hf-mPc" secondAttribute="top" constant="8" id="edK-D1-sn3"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="JkE-Hf-mPc"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cFv-JA-Wan" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2293" y="-626"/>
+            <point key="canvasLocation" x="2292" y="-626.53673163418296"/>
         </scene>
     </scenes>
     <resources>
