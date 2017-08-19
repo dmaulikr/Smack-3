@@ -322,11 +322,10 @@
                                     <action selector="closePressed:" destination="x90-UP-9Iz" eventType="touchUpInside" id="Pbf-Mm-bhK"/>
                                 </connections>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" alignment="top" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="XJB-8p-bi7">
-                                <rect key="frame" x="46" y="178" width="250" height="86"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="XJB-8p-bi7">
+                                <rect key="frame" x="62.5" y="123" width="250" height="136"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WLN-eh-SEa">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WLN-eh-SEa">
                                         <rect key="frame" x="0.0" y="0.0" width="250" height="20"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="250" id="oEb-gI-pjn"/>
@@ -335,7 +334,7 @@
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="l2g-F5-PAx">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l2g-F5-PAx">
                                         <rect key="frame" x="0.0" y="34" width="250" height="2"/>
                                         <color key="backgroundColor" red="0.35686274509999999" green="0.62352941179999999" blue="0.7843137255" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
@@ -343,8 +342,25 @@
                                             <constraint firstAttribute="height" constant="2" id="o5Z-cL-o1t"/>
                                         </constraints>
                                     </view>
-                                    <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ldI-PN-4ZD">
-                                        <rect key="frame" x="0.0" y="50" width="250" height="20"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nSv-0U-7Xf">
+                                        <rect key="frame" x="0.0" y="50" width="250" height="2"/>
+                                        <color key="backgroundColor" red="0.35686274509999999" green="0.62352941179999999" blue="0.7843137255" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="250" id="UGZ-wk-dss"/>
+                                            <constraint firstAttribute="height" constant="2" id="mot-1B-1rg"/>
+                                        </constraints>
+                                    </view>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AsK-Sq-WV5">
+                                        <rect key="frame" x="0.0" y="66" width="250" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="250" id="boA-OE-AuW"/>
+                                        </constraints>
+                                        <color key="textColor" red="0.2901960784" green="0.30196078430000001" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ldI-PN-4ZD">
+                                        <rect key="frame" x="0.0" y="100" width="250" height="20"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="250" id="nYZ-25-VOL"/>
                                         </constraints>
@@ -352,8 +368,8 @@
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
-                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eK5-1t-xzL">
-                                        <rect key="frame" x="0.0" y="84" width="250" height="2"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eK5-1t-xzL">
+                                        <rect key="frame" x="0.0" y="134" width="250" height="2"/>
                                         <color key="backgroundColor" red="0.35686274509999999" green="0.62352941179999999" blue="0.7843137255" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="250" id="A7z-an-UhM"/>
@@ -388,9 +404,8 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" text="Creat an Account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qDq-5Q-mXn">
-                                <rect key="frame" x="89" y="102" width="165" height="23"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" text="Create an Account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qDq-5Q-mXn">
+                                <rect key="frame" x="103" y="60" width="169" height="23"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="19"/>
                                 <color key="textColor" red="0.35686274509999999" green="0.62352941179999999" blue="0.7843137255" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -398,10 +413,14 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="XJB-8p-bi7" firstAttribute="top" secondItem="qDq-5Q-mXn" secondAttribute="bottom" constant="40" id="6Fk-C2-igr"/>
+                            <constraint firstItem="qDq-5Q-mXn" firstAttribute="top" secondItem="JkE-Hf-mPc" secondAttribute="top" constant="40" id="Fm8-e2-V1y"/>
                             <constraint firstItem="JkE-Hf-mPc" firstAttribute="trailing" secondItem="KK3-0f-TiP" secondAttribute="trailing" id="JZa-5X-9FS"/>
                             <constraint firstItem="JkE-Hf-mPc" firstAttribute="bottom" secondItem="hM7-gg-X6c" secondAttribute="bottom" constant="20" id="OOR-0r-lg0"/>
                             <constraint firstItem="hM7-gg-X6c" firstAttribute="centerX" secondItem="RJc-Dp-DhP" secondAttribute="centerX" id="Z7Z-6w-3pa"/>
                             <constraint firstItem="KK3-0f-TiP" firstAttribute="top" secondItem="JkE-Hf-mPc" secondAttribute="top" constant="8" id="edK-D1-sn3"/>
+                            <constraint firstItem="XJB-8p-bi7" firstAttribute="centerX" secondItem="RJc-Dp-DhP" secondAttribute="centerX" id="idL-Um-mSM"/>
+                            <constraint firstItem="qDq-5Q-mXn" firstAttribute="centerX" secondItem="RJc-Dp-DhP" secondAttribute="centerX" id="mly-nm-Jgq"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="JkE-Hf-mPc"/>
                     </view>
