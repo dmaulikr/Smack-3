@@ -16,5 +16,12 @@ class CreateAccountVC: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func closePressed(_ sender: Any) {
+        //unwind segue get back to original VC
+        performSegue(withIdentifier: UNWIND, sender: nil)
+        
+        
+        
+    }
+    
 }
